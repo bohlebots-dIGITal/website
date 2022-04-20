@@ -8,6 +8,7 @@ const Home: NextPage = () => {
         muted
         playsInline
         autoPlay
+        loop
         className="object-cover -z-10 h-screen w-screen"
       >
         <source src="/animation.mp4" type="video/mp4" />
