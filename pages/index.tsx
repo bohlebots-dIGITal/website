@@ -2,36 +2,16 @@ import type { NextPage } from "next";
 import { createRef, useEffect, useRef, useState } from "react";
 
 const Home: NextPage = () => {
-  const [position, setPosition] = useState(0);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    // videoRef = createRef()
-    window.onwheel = (e) => {
-      console.log(window.scrollY);
-      if (videoRef.current) {
-        videoRef.current.currentTime += e.deltaY / 300;
-      }
-    };
-
-    window.onkeydown = (e) => {
-      if (e.key == "ArrowDown" || e.key == "j") {
-        if (videoRef.current) {
-          videoRef.current.currentTime += 1;
-        }
-      } else if (e.key == "ArrowUp" || e.key == "k") {
-        if (videoRef.current) {
-          videoRef.current.currentTime -= 1;
-        }
-      }
-    };
-  });
-
   return (
     <div>
-      <video ref={videoRef} className="object-cover -z-10 h-screen w-screen">
-        <source src="/animation.webm" type="video/webm" />
+      <video
+        muted
+        playsInline
+        autoPlay
+        className="object-cover -z-10 h-screen w-screen"
+      >
         <source src="/animation.mp4" type="video/mp4" />
+        <source src="/animation.webm" type="video/webm" />
         This browser does not support HTML5 video elements.
       </video>
       <div className="flex justify-center items-center z-10 h-screen absolute left-0 top-0 w-screen flex-col text-center">
