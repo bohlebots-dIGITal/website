@@ -5,6 +5,12 @@ import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import Logo from "../public/logo.png";
 
+import Haii from "../public/people/haii.jpg";
+import Niels from "../public/people/niels.jpg";
+import Jonathan from "../public/people/jonathan.jpg";
+import Helena from "../public/people/helena.jpg";
+import Jakob from "../public/people/jakob.jpg";
+
 const Home: NextPage = () => {
   const duration = 0.4;
 
@@ -42,8 +48,7 @@ const Home: NextPage = () => {
                     60 /
                     24
                 )}{" "}
-                days.
-                <CountUp end={27} duration={duration} /> parts.{" "}
+                days. <CountUp end={27} duration={duration} /> parts.{" "}
                 <CountUp end={67} duration={duration} /> hardware iterations.{" "}
                 <span className="text-purple-400">
                   One robot that plays f*cking soccer.
@@ -53,8 +58,42 @@ const Home: NextPage = () => {
           </section>
         )}
       </VisibilitySensor>
+      <section className="w-full py-20 px-4 md:px-24">
+        <h2 className="text-4xl font-bold">About us</h2>
+        <div className="flex flex-wrap mt-10 justify-between">
+          {/* <ProfilePicture name="Niels 🦆" image="asdf" /> */}
+          <ProfilePicture name="Helena" image={Helena} role="project manager" />
+          <ProfilePicture name="Niels 🦆" image={Niels} role="software ente" />
+          <ProfilePicture
+            name="Jonathan"
+            image={Jonathan}
+            role="cHiEf engineer"
+          />
+          <ProfilePicture
+            name="Jakob"
+            image={Jakob}
+            role="mechanical engineer"
+          />
+          <ProfilePicture name="Haiii" image={Haii} role="cute" />
+        </div>
+      </section>
     </div>
   );
 };
+
+function ProfilePicture(props: { image: any; name: string; role: string }) {
+  return (
+    <div className="flex flex-col justify-center items-center">
+      <div className="relative w-[10rem] ">
+        <Image
+          src={props.image}
+          className="absolute top-0 bottom-0 rounded-full"
+        />
+      </div>
+      <span className="font-bold text-2xl">{props.name}</span>
+      <span className="text-2xl">{props.role}</span>
+    </div>
+  );
+}
 
 export default Home;
