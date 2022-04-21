@@ -40,8 +40,7 @@ const Home: NextPage = () => {
           <section className="w-full bg-black py-20 px-4 md:px-24">
             {isVisible ? (
               <span className="text-white text-6xl font-bold">
-                <CountUp end={1203} duration={duration} /> significant lines of
-                code.{" "}
+                <CountUp end={30340} duration={duration} /> SCOC.{" "}
                 {Math.floor(
                   (new Date().getTime() - new Date("2021-05-03").getTime()) /
                     1000 /
