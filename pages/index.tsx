@@ -58,9 +58,9 @@ const Home: NextPage = () => {
           </section>
         )}
       </VisibilitySensor>
-      <section className="w-full py-20 px-4 md:px-24">
+      <section className="w-full py-20 px-2 md:px-24">
         <h2 className="text-4xl font-bold">About us</h2>
-        <div className="flex flex-wrap mt-10 justify-between">
+        <div className="flex flex-col md:flex-row md:flex-wrap  mt-10 justify-center md:justify-between gap-[1rem] ">
           {/* <ProfilePicture name="Niels 🦆" image="asdf" /> */}
           <ProfilePicture name="Helena" image={Helena} role="project manager" />
           <ProfilePicture name="Niels 🦆" image={Niels} role="software ente" />
