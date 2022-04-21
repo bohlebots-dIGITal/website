@@ -49,7 +49,7 @@ const Home: NextPage = () => {
                     24
                 )}{" "}
                 days. <CountUp end={27} duration={duration} /> parts.{" "}
-                <CountUp end={67} duration={duration} /> hardware iterations.{" "}
+                <CountUp end={95} duration={duration} /> hardware iterations.{" "}
                 <span className="text-purple-400">
                   One robot that plays f*cking soccer.
                 </span>
