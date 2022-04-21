@@ -77,9 +77,9 @@ const Home: NextPage = () => {
           <ProfilePicture name="Haiii" image={Haii} role="cute" />
         </div>
       </section>
-      <section className="w-full flex min-h-[30rem]">
-        <div className="w-1/2 bg-[url('/sunglasses.jpg')] bg-cover bg-center"></div>
-        <div className="w-1/2 bg-black py-10 px-4 md:px-10 text-white text-2xl">
+      <section className="w-full flex flex-col md:flex-row ">
+        <div className="md:w-1/2 w-full bg-[url('/sunglasses.jpg')] bg-cover bg-center md:min-h-[30rem] min-h-[20rem]"></div>
+        <div className="md:w-1/2 w-full bg-black py-10 px-10 md:px-10 text-white text-2xl">
           <h2 className="text-4xl font-bold">Info</h2>
           <ul className="list-disc">
             <li>&mu;C: Espressif ESP-WROOM-32 dev-board</li>
