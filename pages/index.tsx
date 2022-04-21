@@ -31,7 +31,7 @@ const Home: NextPage = () => {
       </video>
       <div className="flex justify-center items-center z-10 h-screen absolute left-0 top-0 w-screen flex-col text-center">
         <div className="relative md:w-[30rem] w-72">
-          <Image src={Logo} className="absolute top-0 left-0" />
+          <Image src={Logo} className="absolute top-0 left-0" alt="dIGITal" />
         </div>
         <p className="text-white text-2xl">At least halfway decent</p>
       </div>
@@ -87,6 +87,7 @@ function ProfilePicture(props: { image: any; name: string; role: string }) {
       <div className="relative w-[10rem] ">
         <Image
           src={props.image}
+          alt={props.name}
           className="absolute top-0 bottom-0 rounded-full"
         />
       </div>
