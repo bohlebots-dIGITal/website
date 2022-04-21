@@ -77,6 +77,23 @@ const Home: NextPage = () => {
           <ProfilePicture name="Haiii" image={Haii} role="cute" />
         </div>
       </section>
+      <section className="w-full flex min-h-[30rem]">
+        <div className="w-1/2 bg-[url('/sunglasses.jpg')] bg-cover bg-center"></div>
+        <div className="w-1/2 bg-black py-10 px-4 md:px-10 text-white text-2xl">
+          <h2 className="text-4xl font-bold">Info</h2>
+          <ul className="list-disc">
+            <li>&mu;C: Espressif ESP-WROOM-32 dev-board</li>
+            <li>Pixy-2 camera module</li>
+            <li>Integrated IR-Ring module</li>
+            <li>Four DC-Motors with Omniwheels</li>
+            <li>
+              Load-bearing aluminum extrusion-columns mounted between two PCBs
+              (without traces, only for mounting stuff upon)
+            </li>
+            <li>Sunglasses for extra #swag</li>
+          </ul>
+        </div>
+      </section>
     </div>
   );
 };
