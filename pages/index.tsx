@@ -50,6 +50,7 @@ const Home: NextPage = () => {
                 )}{" "}
                 days. <CountUp end={27} duration={duration} /> parts.{" "}
                 <CountUp end={95} duration={duration} /> hardware iterations.{" "}
+                <CountUp end={2} duration={duration} /> wins. 0 losses.{" "}
                 <span className="text-purple-400">
                   One robot that plays f*cking soccer.
                 </span>
