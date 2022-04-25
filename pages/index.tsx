@@ -73,7 +73,7 @@ const Home: NextPage = () => {
             image={Jakob}
             role="mechanical engineer"
           />
-          <ProfilePicture name="Haiii" image={Haii} role="cute" />
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" className="cursor-default"><ProfilePicture name="Haiii" image={Haii} role="cute" /></a>
         </div>
       </section>
       <section className="w-full flex flex-col md:flex-row ">
