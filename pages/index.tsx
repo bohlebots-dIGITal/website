@@ -85,6 +85,7 @@ const Home: NextPage = () => {
             <li>Pixy-2 camera module</li>
             <li>Integrated IR-Ring module</li>
             <li>Four DC-Motors with Omniwheels</li>
+            <li>Solenoid that can be actuated for kicking the ball</li>
             <li>
               Load-bearing aluminum extrusion-columns mounted between two PCBs
               (without traces, only for mounting stuff upon)
